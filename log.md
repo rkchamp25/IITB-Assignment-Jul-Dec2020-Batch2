@@ -3,4 +3,6 @@
 1. Created Github Repository
 2. Shared the link
 3. Figuring out how to generate data
-4. Generating data using https://github.com/Belval/TextRecognitionDataGenerator
+4. Trying to generate data using https://github.com/Belval/TextRecognitionDataGenerator
+5. Trying to produce variations in the generated data and figuring out what to do with the boxes around characters
+

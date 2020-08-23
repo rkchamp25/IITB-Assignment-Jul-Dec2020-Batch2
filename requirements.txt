@@ -1,0 +1,10 @@
+pillow
+numpy
+requests
+opencv-python
+tqdm
+beautifulsoup4
+diffimg
+tensorflow-gpu
+matplotlib
+seaborn

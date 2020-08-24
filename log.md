@@ -11,5 +11,5 @@
 24/08/2020
 
 1. Resolving version conflicts for aocr model and text generator to work simultaneously
-2. Generating data
+2. Generating training data
 

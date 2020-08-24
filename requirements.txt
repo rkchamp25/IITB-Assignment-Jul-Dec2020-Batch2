@@ -1,10 +1,11 @@
-pillow
-numpy
-requests
-opencv-python
-tqdm
-beautifulsoup4
-diffimg
-tensorflow-gpu
-matplotlib
-seaborn
+pip install pillow
+pip install numpy
+pip install requests
+pip install tqdm
+pip install beautifulsoup4
+pip install diffimg
+pip install tensorflow-gpu==1.15
+pip install matplotlib
+pip install seaborn
+pip install opencv-python
+pip install keras

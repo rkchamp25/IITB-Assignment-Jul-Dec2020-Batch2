@@ -15,4 +15,5 @@
 3. Trying to create box data and looking for alternatives
 4. Generated training data(60K) and train.tfrecords file
 5. Generated testing data(10K) and test.tfrecords file
+6. Training the model with default hyperparameters
 

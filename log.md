@@ -10,7 +10,7 @@
 
 24/08/2020
 
-1. Resolving version conflicts for aocr model and text generator to work simultaneously
+1. Resolving version conflicts for aocr model and text generator to work side by side
 2. Generating training data
 3. Trying to create box data and looking for alternatives
 4. Generated training data and training tfrecords file.

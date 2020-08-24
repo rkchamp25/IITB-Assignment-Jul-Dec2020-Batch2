@@ -8,3 +8,7 @@
 6. Trying to figure out how to organize the labels for the texts that are generated
 7. Still looking for boxing the characters in the data and trying to create tfrecords of a small sample 
 
+24/08/2020
+
+1. Resolving version conflicts for aocr model and text generator to work simultaneously
+

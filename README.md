@@ -41,6 +41,38 @@ You can see help for various options present
 ```
 ./run.py -h
 ```
+Replace './' by the corresponding location of the run.py file
+
 You can add more fonts in the fonts folder, more background images, texts, dictionaries etc according to the requirements
 
 Go to the official documentation https://textrecognitiondatagenerator.readthedocs.io/en/latest/index.html for more details
+
+### 4. For further process clone the following repository
+https://github.com/emedvedev/attention-ocr
+```
+git clone https://github.com/emedvedev/attention-ocr.git
+```
+or you can simply do
+```
+pip install aocr
+```
+
+### 5. Preparing the dataset in tfrecords format
+First you need to prepare the annotations.txt file which is just a simple text file containing the locations of all the images in the set and their corresponding labels
+for eg
+```
+c:/Users/rkcha/TextRecognitionDataGenerator/trdg/out/11.jpg 7hj LcQ
+c:/Users/rkcha/TextRecognitionDataGenerator/trdg/out/12.jpg Yx5vNVfg
+c:/Users/rkcha/TextRecognitionDataGenerator/trdg/out/13.jpg DtbngV3Rs
+```
+
+Then use the following commands to prepare tfrecords
+```
+aocr dataset ./datasets/annotations-training.txt ./datasets/training.tfrecords
+aocr dataset ./datasets/annotations-testing.txt ./datasets/testing.tfrecords
+```
+Replace ./ by your absolute paths to the annotation files and the destination of where you want to keep the tfrecords files
+To check more options use
+```
+aocr dataset -h
+```

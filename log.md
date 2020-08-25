@@ -21,4 +21,4 @@
 
 1. So 1000 epochs set by default seems impossible as it is taking around 50 mins per epoch using gpu so stopping the training and restarting it with less number of epochs
 2. Updating the github repository
-3. Trained the model in around 6 hours(50 epochs). Final loss 0.042 and perplexity 1.04. Total steps 42713. 
+3. Trained the model in around 6 hours(50 epochs). Final loss 0.142 and perplexity 1.04. Total steps 42713. Looks as if the model did not improve much after 30 epochs or so as the loss was varying from 0.05 - 0.15 throughout.

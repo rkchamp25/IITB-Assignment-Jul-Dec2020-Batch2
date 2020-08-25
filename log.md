@@ -20,3 +20,4 @@
 25/08/2020
 
 1. So 1000 epochs set by default seems impossible as it is taking around 50 mins per epoch using gpu so stopping the training and restarting it with less number of epochs
+2. Updating the github repository with information on work done till now and how to do

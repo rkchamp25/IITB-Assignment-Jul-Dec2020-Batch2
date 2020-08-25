@@ -3,6 +3,6 @@
 ## Handwritten Form Reader Web App
 
 ### Create new environment
-
+```
 conda create -n envname
-
+```

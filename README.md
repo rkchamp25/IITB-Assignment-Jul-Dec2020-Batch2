@@ -37,5 +37,9 @@ After this simply run the run.py file in the trdg folder in anaconda prompt or a
 python ./run.py -c 1000
 ```
 This will generate 1000 images
-You can see help for various options present and go to the official documentation https://textrecognitiondatagenerator.readthedocs.io/en/latest/index.html for more details
-
+You can see help for various options present
+```
+./run.py -h
+```
+You can add more fonts in the fonts folder, more background images, texts, dictionaries etc according to the requirements
+Go to the official documentation https://textrecognitiondatagenerator.readthedocs.io/en/latest/index.html for more details

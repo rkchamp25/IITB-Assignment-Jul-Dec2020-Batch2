@@ -17,3 +17,6 @@
 5. Generated testing data(10K) and test.tfrecords file
 6. Training the model with default hyperparameters
 
+25/08/2020
+
+1. So 1000 epochs set by default seems impossible as it is taking around 50 mins per epoch using gpu so stopping the training and restarting it with less number of epochs

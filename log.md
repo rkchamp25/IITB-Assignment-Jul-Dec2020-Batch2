@@ -24,3 +24,5 @@
 3. Trained the model in around 6 hours and 30 mins(50 epochs). Final loss 0.142 and perplexity 1.04. Total steps 42713. Looks as if the model did not improve much after 30 epochs(around 26000 steps) or so as the loss was varying from 0.05 - 0.15 throughout.
 4. Testing the model on custom test set generated randomly like the training set
 5. Testing time = 15 min, Test Sample Size = 10k, Test Accuracy = 69.88%
+6. Testing the model on given sample of 30 images -->> Accuracy = 31.70%
+7. Thinking of modifying the dataset as earlier dataset has max length of string around 30 chars, the images used include colored images and also both upper case and lower case

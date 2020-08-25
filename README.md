@@ -2,5 +2,7 @@
 
 ## Handwritten Form Reader Web App
 
-### Generating Data
+### Create new environment
+
+conda create -n envname
 

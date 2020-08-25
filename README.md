@@ -42,4 +42,5 @@ You can see help for various options present
 ./run.py -h
 ```
 You can add more fonts in the fonts folder, more background images, texts, dictionaries etc according to the requirements
+
 Go to the official documentation https://textrecognitiondatagenerator.readthedocs.io/en/latest/index.html for more details

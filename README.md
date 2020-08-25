@@ -72,6 +72,7 @@ aocr dataset ./datasets/annotations-training.txt ./datasets/training.tfrecords
 aocr dataset ./datasets/annotations-testing.txt ./datasets/testing.tfrecords
 ```
 Replace ./ by your absolute paths to the annotation files and the destination of where you want to keep the tfrecords files
+
 To check more options use
 ```
 aocr dataset -h

@@ -3,9 +3,9 @@ conda install numpy
 conda install requests
 conda install tqdm
 conda install beautifulsoup4
-pip install diffimg
 conda install tensorflow-gpu==1.15
 conda install matplotlib
 conda install seaborn
 pip install opencv-python
 pip install keras
+pip install diffimg

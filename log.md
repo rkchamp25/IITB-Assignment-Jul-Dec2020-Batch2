@@ -26,4 +26,4 @@
 5. Testing time = 15 min, Test Sample Size = 10k, Test Accuracy = 69.88%
 6. Testing the model on given sample of 30 images -->> Accuracy = 31.70%
 7. Thinking of modifying the dataset as earlier dataset has max length of string around 30 chars, the images used include colored images and also both upper case and lower case
-8. Training the model again with 37 epochs instead of previous 50, reduced batch size of 60, increased steps per epoch of 1000 and most importantly the max prediction length now will be of length 15
+8. Training the model again with 37 epochs instead of previous 50, reduced batch size of 60, increased steps per epoch of 1000 and most importantly the max prediction length now will be of length 15 which was 32 earlier

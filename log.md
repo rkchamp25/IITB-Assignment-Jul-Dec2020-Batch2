@@ -44,8 +44,8 @@
 2. Finished training in 12 hrs and 40 min. Final loss is around 0.06 and perplexity is 1.06. The 9 more epochs helped reduce the loss a little bit. 
 3. The loss plots show that the loss is initially decrasing rapidly and then decrases gradually. After 40 epochs the decrease is very less and it becomes almost stagnant after  around 47 epochs i.e only a small change of 0.002 or 0.003 takes place.
 3. Testing the models on self generated test set and the sample dataset provided today of around 1000 pics:
-|           model                  |                              Accuracy                         |
-|----------------------------------|     self generated dataset      |     sample dataset provided |
+|           model                  |     self generated dataset      |     sample dataset provided |
+|----------------------------------|---------------------------------|-----------------------------|           
 |model trained for 37 epochs:      |            74.45%               |              48.30%         |
 |model trained for 46 epochs:      |            76.80%               |              56.54%         |
 4.

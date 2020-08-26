@@ -75,14 +75,14 @@ aocr dataset -h
 ```
 
 
-### 5. For further process clone the following repository
+### 5. For training/testing the model install attention ocr or clone the repository
 https://github.com/emedvedev/attention-ocr
 ```
-git clone https://github.com/emedvedev/attention-ocr.git
-```
-or you can simply do
-```
 pip install aocr
+```
+or
+```
+git clone https://github.com/emedvedev/attention-ocr.git
 ```
 
 

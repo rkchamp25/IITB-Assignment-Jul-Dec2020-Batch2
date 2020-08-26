@@ -50,5 +50,4 @@
 | model trained for 37 epochs: | 74.45% | 48.30% |
 | model trained for 46 epochs: | 76.80% | 56.54% |
 
-5.
 

@@ -46,7 +46,7 @@ python location/of/run.py -c 1000
 This will generate 1000 images
 You can see help for various options present
 ```
-location/of/run.py -h
+python location/of/run.py -h
 ```
 
 You can add more fonts in the fonts folder, more background images, texts, dictionaries etc according to the requirements

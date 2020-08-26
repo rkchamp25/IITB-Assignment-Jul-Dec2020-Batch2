@@ -41,4 +41,12 @@
 
 
 1. The model is still training. Increased number of epochs by 10 as the loss was still decreasing (although slowly) when the training stopped at 37 epochs so increased it further to 47. This may be due to the modification in the dataset as the previous set had much more vaariation than required. Also earlier each step was around 0.5 s and now it is around 0.8 s due to the fact that now the max image width has been set to 650 pixels compared to previous width of 300 pixels.
+2. Finished training in 12 hrs and 40 min. Final loss is around 0.06 and perplexity is 1.06. The 9 more epochs helped reduce the loss a little bit. 
+3. The loss plots show that the loss is initially decrasing rapidly and then decrases gradually. After 40 epochs the decrease is very less and it becomes almost stagnant after  around 47 epochs i.e only a small change of 0.002 or 0.003 takes place.
+3. Testing the models on self generated test set and the sample dataset provided today of around 1000 pics:
+                                                                Accuracy
+                                       self generated dataset      |     sample dataset provided
+model trained for 37 epochs:                  74.45%               |              48.30%
+model trained for 46 epochs:                  76.80%               |              56.54%
+4.
 

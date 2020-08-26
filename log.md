@@ -27,3 +27,7 @@
 6. Testing the model on given sample of 30 images -->> Accuracy = 31.70%
 7. Thinking of modifying the dataset as earlier dataset has max length of string around 30 chars, the images used include colored images and also both upper case and lower case
 8. Training the model again with 37 epochs instead of previous 50, reduced batch size of 60, increased steps per epoch of 1000 and most importantly the max prediction length now will be of length 15 which was 32 earlier
+
+26/08/2020
+1. The model is still training. Increased number of epochs by 10 as the loss was still decreasing (although slowly) when the training stopped at 37 epochs so increased it further to 47. This may be due to the modification in the dataset as the previous set had much more vaariation than required. Also earlier each step was around 0.5 s and now it is around 0.8 s due to the fact that now the max image width has been set to 650 pixels compared to previous width of 300 pixels.
+

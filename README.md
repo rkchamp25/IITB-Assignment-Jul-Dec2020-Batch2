@@ -10,7 +10,7 @@ conda create -n envname python=3.7
 If not using anaconda then see this link
 https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
 
-Note: Python version is 3.7. Now everything is installed and modified is in this environment only.
+Note: Python version is 3.7. Now everything will be done in this environment.
 
 To activate and use the environment 
 ```

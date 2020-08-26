@@ -10,17 +10,22 @@ conda create -n envname python=3.7
 If not using anaconda then see this link
 https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
 
-Note: Python version is 3.7
+Note: Python version is 3.7. Now everything is installed and modified is in this environment only.
+
+To activate and use the environment 
+```
+conda activate envname
+```
 
 ### 2. Install the required packages 
 All the required packages are mentioned in the requirements.txt files.
 Note: Anaconda does not have few packages like opencv so install them using the python package manager (pip)
 ```
-pip install -r requirements.txt
+pip install -r location/of/requirements/file/requirements.txt
 ```
 
 ### 3. Generating the dataset
-Option 1 - Use the already generated data in the tfrecords format. Links in the dataset folder. Simply download from the link and move to step 5. 
+Option 1 - Use the already generated data in the tfrecords format. Links in the dataset folder. Download from the link and move to step 5. 
 
 Option 2 - https://github.com/Belval/TextRecognitionDataGenerator/tree/master
 Go to this link and download the repository or you can also clone the repository using 
@@ -34,19 +39,17 @@ pip install trdg
 
 After this simply run the run.py file in the trdg folder in anaconda prompt or an ide
 ```
-python ./run.py -c 1000
+python location/of/run.py -c 1000
 ```
 This will generate 1000 images
 You can see help for various options present
 ```
-./run.py -h
+location/of/run.py -h
 ```
-Replace './' by the corresponding location of the run.py file
 
 You can add more fonts in the fonts folder, more background images, texts, dictionaries etc according to the requirements
 
 Go to the official documentation https://textrecognitiondatagenerator.readthedocs.io/en/latest/index.html for more details
-
 
 ### 4. Preparing the dataset in tfrecords format
 First you need to prepare the annotations.txt file which is just a simple text file containing the locations of all the images in the set and their corresponding labels
@@ -59,10 +62,9 @@ c:/Users/rkcha/TextRecognitionDataGenerator/trdg/out/13.jpg DtbngV3Rs
 
 Then use the following commands to prepare tfrecords
 ```
-aocr dataset ./datasets/annotations-training.txt ./datasets/training.tfrecords
-aocr dataset ./datasets/annotations-testing.txt ./datasets/testing.tfrecords
+aocr dataset location/of/datasets/annotations-training.txt location/of/datasets/training.tfrecords
+aocr dataset location/of/datasets/annotations-testing.txt location/of/datasets/testing.tfrecords
 ```
-Replace ./ by your absolute paths to the annotation files and the destination of where you want to keep the tfrecords files
 
 To check more options use
 ```
@@ -77,4 +79,10 @@ git clone https://github.com/emedvedev/attention-ocr.git
 or you can simply do
 ```
 pip install aocr
+```
+
+### 6. To Train the model
+Use the following command to train the model
+```
+aocr train location/of/training/data/train.tfrecords
 ```

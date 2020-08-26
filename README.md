@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Generating the dataset
-Option 1 - Use the provided dataset in the tfrecords format
+Option 1 - Use the already generated data in the tfrecords format. Links in the dataset folder. Simply download from the link and move to step 5. 
 
 Option 2 - https://github.com/Belval/TextRecognitionDataGenerator/tree/master
 Go to this link and download the repository or you can also clone the repository using 
@@ -47,17 +47,8 @@ You can add more fonts in the fonts folder, more background images, texts, dicti
 
 Go to the official documentation https://textrecognitiondatagenerator.readthedocs.io/en/latest/index.html for more details
 
-### 4. For further process clone the following repository
-https://github.com/emedvedev/attention-ocr
-```
-git clone https://github.com/emedvedev/attention-ocr.git
-```
-or you can simply do
-```
-pip install aocr
-```
 
-### 5. Preparing the dataset in tfrecords format
+### 4. Preparing the dataset in tfrecords format
 First you need to prepare the annotations.txt file which is just a simple text file containing the locations of all the images in the set and their corresponding labels
 for eg
 ```
@@ -76,4 +67,14 @@ Replace ./ by your absolute paths to the annotation files and the destination of
 To check more options use
 ```
 aocr dataset -h
+```
+
+### 5. For further process clone the following repository
+https://github.com/emedvedev/attention-ocr
+```
+git clone https://github.com/emedvedev/attention-ocr.git
+```
+or you can simply do
+```
+pip install aocr
 ```

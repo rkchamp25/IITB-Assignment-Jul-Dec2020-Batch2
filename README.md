@@ -1,9 +1,6 @@
 # Rohan_Kapoor_9599023170-IITB-Assignment-Jul-Dec2020-Batch2
 
 ## Handwritten Form Reader Web App
-To directly train or test the given model go to step 5
-or
-Start from the beginnning
 
 ### 1. Create new environment
 If using anaconda then create new environment using this in the conda prompt else you can use the navigator as well

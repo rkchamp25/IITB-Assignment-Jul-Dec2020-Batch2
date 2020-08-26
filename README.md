@@ -17,12 +17,14 @@ To activate and use the environment
 conda activate envname
 ```
 
+
 ### 2. Install the required packages 
 All the required packages are mentioned in the requirements.txt files.
 Note: Anaconda does not have few packages like opencv so install them using the python package manager (pip)
 ```
 pip install -r location/of/requirements/file/requirements.txt
 ```
+
 
 ### 3. Generating the dataset
 Option 1 - Use the already generated data in the tfrecords format. Links in the dataset folder. Download from the link and move to step 5. 
@@ -51,6 +53,7 @@ You can add more fonts in the fonts folder, more background images, texts, dicti
 
 Go to the official documentation https://textrecognitiondatagenerator.readthedocs.io/en/latest/index.html for more details
 
+
 ### 4. Preparing the dataset in tfrecords format
 First you need to prepare the annotations.txt file which is just a simple text file containing the locations of all the images in the set and their corresponding labels
 for eg
@@ -71,6 +74,7 @@ To check more options use
 aocr dataset -h
 ```
 
+
 ### 5. For further process clone the following repository
 https://github.com/emedvedev/attention-ocr
 ```
@@ -81,8 +85,14 @@ or you can simply do
 pip install aocr
 ```
 
+
 ### 6. To Train the model
 Use the following command to train the model
 ```
 aocr train location/of/training/data/train.tfrecords
 ```
+For checking the options available use
+```
+aocr train -h
+```
+Here you can change number of epochs, batch size, image size etc.

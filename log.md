@@ -73,3 +73,4 @@
 3. Tried to make a cnn similar to ResNet50. First few layers follow this architecture where the output of a layer is added to the result of a layer more deeper than it i.e output of layer x is added to output of layer n + x. And on top of this are few more convolution and pooling layers without this residue learning part. In the end there is dropout layer.
 4. Currently training the modified model with 25 epochs, learning rate(adaptive) = 0.05(initial), batch size is 60, total number of images in the training set is 60k, and the max label length allowed is 15. 
 5. Checking out how to deploy a model using flask while the model is training
+6. Compiling the results of both the models and prepearing to test both of them. Analyzing the loss and accuracy plots for both the models.

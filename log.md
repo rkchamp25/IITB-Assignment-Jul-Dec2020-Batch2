@@ -81,4 +81,4 @@
 29/08/2020
 
 
-1. Training the models some more on the public test dataset provided.
+1. Training the models some more on the public test dataset provided. Because it seems that the models have memorized and that is not good. Especially the modified model so retraining may be required.

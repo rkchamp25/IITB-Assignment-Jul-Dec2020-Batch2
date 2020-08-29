@@ -82,4 +82,6 @@
 
 
 1. Training the models some more on the public test dataset provided. Because it seems that the models have memorized and that is not good. Especially the modified model so retraining may be required.
-2. Preparing the assignment report and side by side learning about how to deploy the model
+2. Preparing the assignment report and side by side learning about how to make the web app and deploy it
+3. Studying about Flask and Heroku
+4. Looking for how the predict function of the model works because this is required for the web app deployment

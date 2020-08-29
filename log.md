@@ -68,6 +68,7 @@
 
 28/08/2020
 
+
 1. By adding just 4 or 5 more layers (apart from previous 8) the GPU is running out memory. Figuring out the solution.
 2. The GPU keeps running out of memory when nummber of layers is more than like 12 and can't use CPU for this because the training then will take a year to finish.
 3. Tried to make a cnn similar to ResNet50. First few layers follow this architecture where the output of a layer is added to the result of a layer more deeper than it i.e output of layer x is added to output of layer n + x. And on top of this are few more convolution and pooling layers without this residue learning part. In the end there is dropout layer.
@@ -75,3 +76,9 @@
 5. Checking out how to deploy a model using flask while the model is training
 6. Compiling the results of both the models and prepearing to test both of them. Analyzing the loss and accuracy plots for both the models.
 7. Thinking of training both models a little bit more on a mix of the provided data and custom more variation data for the model to be more adaptive and robust.
+
+
+29/08/2020
+
+
+1. Training the models some more on the public test dataset provided.

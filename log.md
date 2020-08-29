@@ -85,3 +85,4 @@
 2. Preparing the assignment report and side by side learning about how to make the web app and deploy it
 3. Studying about Flask and Heroku
 4. Looking for how the predict function of the model works because this is required for the web app deployment
+5. Preparing the documentation

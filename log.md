@@ -93,4 +93,5 @@
 
 1. Training the original model on mix of own and public dataset.
 2. Preparing presentation report
-3. Testing both the models again on custom and public dataset and plotting their losses and accuracies
+3. Testing both the models again on custom and public dataset and plotting their losses and accuracies.
+4. Writing the flask script side by side.

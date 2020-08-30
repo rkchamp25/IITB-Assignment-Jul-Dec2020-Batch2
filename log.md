@@ -86,3 +86,10 @@
 3. Studying about Flask and Heroku
 4. Looking for how the predict function of the model works because this is required for the web app deployment
 5. Preparing the documentation
+
+
+30/08/2020
+
+
+1. Training the original model on mix of own and public dataset.
+2. Preparing presentation report

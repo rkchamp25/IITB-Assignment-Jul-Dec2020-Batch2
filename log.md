@@ -96,3 +96,4 @@
 3. Testing both the models again on custom and public dataset and plotting their losses and accuracies.
 4. Writing the flask script side by side.
 5. Exporting the models and writing flask script to deploy the model.
+6. Uploading the datasets and updating the github repository.

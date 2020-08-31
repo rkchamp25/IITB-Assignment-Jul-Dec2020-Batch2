@@ -98,3 +98,10 @@
 5. Exporting the models and writing flask script to deploy the model.
 6. Uploading the datasets and updating the github repository.
 7. Created Flask App
+
+
+
+31/08/2020
+
+
+1. Compiling things and updating the github repository

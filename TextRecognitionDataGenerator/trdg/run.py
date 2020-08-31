@@ -433,9 +433,7 @@ def main():
     ):
         pass
     p.terminate()
-    
-    cnt = sum(1 for line in open("c:/Users/rkcha/TextRecognitionDataGenerator/trdg/out/labels.txt"))
-    ipath = "c:/Users/rkcha/TextRecognitionDataGenerator/trdg/out/"
+
 
     if args.name_format == 2:
         # Create file with filename-to-label connections
@@ -443,7 +441,7 @@ def main():
             os.path.join(args.output_dir, "labels.txt"), "a", encoding="utf8"
         ) as f:
             for i in range(string_count):
-                file_name = ipath + str(i + cnt) + "." + args.extension
+                file_name = str(i) + "." + args.extension
                 f.write("{} {}\n".format(file_name, strings[i]))
 
 

@@ -212,8 +212,6 @@ class FakeTextDataGenerator(object):
         # Generate name for resulting image #
         #####################################
 
-        linecnt = sum(1 for line in open("c:/Users/rkcha/TextRecognitionDataGenerator/trdg/out/labels.txt"))
-
         if name_format == 0:
             image_name = "{}_{}.{}".format(text, str(index), extension)
             mask_name = "{}_{}_mask.png".format(text, str(index))
@@ -221,8 +219,7 @@ class FakeTextDataGenerator(object):
             image_name = "{}_{}.{}".format(str(index), text, extension)
             mask_name = "{}_{}_mask.png".format(str(index), text)
         elif name_format == 2:
-            image_name = "{}.{}".format(str(index + linecnt), extension)
-            linecnt = linecnt + 1
+            image_name = "{}.{}".format(str(index), extension)
             mask_name = "{}_mask.png".format(str(index))
         else:
             print("{} is not a valid name format. Using default.".format(name_format))

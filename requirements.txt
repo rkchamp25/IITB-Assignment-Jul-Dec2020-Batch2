@@ -10,3 +10,6 @@ seaborn
 opencv-python
 keras
 flask
+setuptools
+six
+distance

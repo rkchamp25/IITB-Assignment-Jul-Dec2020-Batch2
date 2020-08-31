@@ -105,3 +105,4 @@
 
 
 1. Compiling things and updating the github repository
+2. Creating my_run.sh and editing the prediction part in the main file to communicate properly with my_run.sh

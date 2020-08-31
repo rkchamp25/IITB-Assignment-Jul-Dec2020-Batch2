@@ -2,6 +2,12 @@
 
 ## Handwritten Form Reader Web App  
 
+### 0. my_run.sh
+To predict for a folder containing images simply execute my_run.sh  
+```
+my_run.sh path/of/directory output/file/path/filename.txt
+```
+
 ### 1. Create new environment  
 If using anaconda then create new environment using this in the conda prompt else you can use the navigator as well
 ```
@@ -10,7 +16,7 @@ conda create -n envname python=3.7
 If not using anaconda then see this link
 https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/  
 
-Note: Python version is 3.7. Now everything will be done in this environment.
+#### Note: Python version is 3.7. Now everything will be done in this environment.
 
 To activate and use the environment 
 ```
@@ -36,7 +42,6 @@ cd Rohan_Kapoor_9599023170-IITB-Assignment-Jul-Dec2020-Batch2
 ### 3. Install the required packages    
 ```
 pip install -r requirements.txt
-pip install -r ./attention_ocr/
 ```
 
 ### 4. Generating images  

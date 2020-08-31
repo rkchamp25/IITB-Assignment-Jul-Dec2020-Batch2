@@ -106,3 +106,5 @@
 
 1. Compiling things and updating the github repository
 2. Creating my_run.sh and editing the prediction part in the main file to communicate properly with my_run.sh
+3. Tried depolying using Heroku but got memory limit exceeded and therefore switched to ngrok.
+4. Completed the assignment report.

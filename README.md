@@ -5,7 +5,7 @@
 ### 0. my_run.sh
 To predict for a folder containing images simply execute my_run.sh. This will print the predictions in the output file.
 ```
-my_run.sh path/of/directory output/file/path/filename.txt
+my_run.sh path/of/folder output/file/path/filename.txt
 ```
 
 ### 1. Create new environment  

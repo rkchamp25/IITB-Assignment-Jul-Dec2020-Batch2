@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:/Users/rkcha/anaconda3/envs/ocr/Lib/site-packages/aocr/ocrmodel/checkpoints\\model.ckpt-28024"
+all_model_checkpoint_paths: "C:/Users/rkcha/anaconda3/envs/ocr/Lib/site-packages/aocr/ocrmodel/checkpoints\\model.ckpt-28024"

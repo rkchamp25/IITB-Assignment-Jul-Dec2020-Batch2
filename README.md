@@ -28,9 +28,9 @@ Clone this repository using
 ```
 git clone repository_address
 ```  
-After that change location to this repository  
+#### After that change location to this repository  
 ```
-cd Rohan_Kapoor_9599023170-IITB-Assignment-Jul-Dec2020-Batch2
+cd Rohan_Kapoor_9599023170-IITB-Assignment-Jul-Dec2020-Batch2 (Required for all operations)
 ```
 
 ### 3. Install the required packages    
@@ -100,13 +100,12 @@ aocr test --model-dir ./checkpoint_orig_model ./dataset/nameoffile.tfrecords
 ```  
 To test any other model (use --modcnn if trained using modified cnn)
 ```
-aocr test path/of/checkpoint ./dataset/filename.tfrecords
-aocr test --modcnn path/of/checkpoint ./dataset/filename.tfrecords
+aocr test path/of/checkpoints ./dataset/filename.tfrecords
+aocr test --modcnn path/of/checkpoints ./dataset/filename.tfrecords
  
 ```
 ### 8. To use the web app
 ```
 python app.py
 ```
-and go to link http://127.0.0.1:5000/  
-then give the url of the image
+and go to link http://127.0.0.1:5000/  then give the url of the image

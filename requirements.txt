@@ -3,8 +3,8 @@ numpy
 requests
 tqdm
 beautifulsoup4
+tensorflow-gpu=1.15
 diffimg
-tensorflow-gpu==1.15
 matplotlib
 seaborn
 opencv-python
@@ -13,3 +13,4 @@ flask
 setuptools
 six
 distance
+./attention_ocr/

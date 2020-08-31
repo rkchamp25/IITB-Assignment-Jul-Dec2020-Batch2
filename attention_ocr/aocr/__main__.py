@@ -5,6 +5,7 @@
 
 from __future__ import absolute_import
 
+import os
 import sys
 import argparse
 import logging
@@ -192,6 +193,8 @@ def process_args(args, defaults):
     # Predicting
     parser_predict = subparsers.add_parser('predict', parents=[parser_base, parser_model],
                                            help='Predict text from files (feed through stdin).')
+    parser_predict.add_argument('--dirpath', dest="dirpath", type=str, default='./temp', help="Path of Directory to test.")
+    parser_predict.add_argument('--out_file_name', dest="output_file_name", type=str, default='predictions.txt', help="Path of Directory to test.")
     parser_predict.set_defaults(phase='predict', steps_per_checkpoint=0, batch_size=1)
 
     parameters = parser.parse_args(args)
@@ -264,7 +267,7 @@ def main(args=None):
                 data_path=parameters.dataset_path
             )
         elif parameters.phase == 'predict':
-            for line in sys.stdin:
+            """for line in sys.stdin:
                 filename = line.rstrip()
                 if(filename == "exit"): 
                     sys.exit()
@@ -275,7 +278,24 @@ def main(args=None):
                     logging.error('Result: error while opening file %s.', filename)
                     continue
                 text, probability = model.predict(img_file_data)
-                logging.info('Result: OK. %s %s', '{:.2f}'.format(probability), text)
+                logging.info('Result: OK. %s %s', '{:.2f}'.format(probability), text)"""
+
+            dirpath = parameters.dirpath
+            output_file_name = parameters.output_file_name
+            output_file_txt = open(output_file_name, "w")
+
+            for filename in os.listdir(dirpath):
+               try:
+                   with open(dirpath+'/'+filename, 'rb') as img_file:
+                       img_file_data = img_file.read()
+                       text, probability = model.predict(img_file_data)
+                       logging.info('Result: OK. %s %s','{:.2f}'.format(probability), text)
+                       print(filename, text, probability)
+                       output_file_txt.write('%s %s\n' % (filename, text))
+               except IOError:
+                   logging.error('Result error while opening file %s .', dirpath+filename)
+
+            output_file_txt.close()
         elif parameters.phase == 'export':
             exporter = Exporter(model)
             exporter.save(parameters.export_path, parameters.format)

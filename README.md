@@ -28,9 +28,9 @@ Clone this repository using
 ```
 git clone repository_address
 ```  
-#### After that change location to this repository  
+#### After that change location to this repository (Required for all operations)  
 ```
-cd Rohan_Kapoor_9599023170-IITB-Assignment-Jul-Dec2020-Batch2 (Required for all operations)
+cd Rohan_Kapoor_9599023170-IITB-Assignment-Jul-Dec2020-Batch2 
 ```
 
 ### 3. Install the required packages    

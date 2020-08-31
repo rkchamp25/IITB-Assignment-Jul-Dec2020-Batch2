@@ -17,7 +17,6 @@ To activate and use the environment
 conda activate envname
 ```
 
-
 ### 2. Clone this repository  
 Either Install git-bash from https://git-scm.com/downloads
 or 
@@ -28,48 +27,37 @@ pip install git
 Clone this repository using 
 ```
 git clone repository_address
+```  
+After that change location to this repository  
 ```
-
+cd Rohan_Kapoor_9599023170-IITB-Assignment-Jul-Dec2020-Batch2
+```
 
 ### 3. Install the required packages    
 ```
 pip install -r requirements.txt
+pip install -r ./attention_ocr/
 ```
 
-
-### 3. Generating the dataset
-Option 1 - Use the already generated data in the tfrecords format. Links in the dataset folder. Download from the link and move to step 5. 
-
-Option 2 - https://github.com/Belval/TextRecognitionDataGenerator/tree/master
-Go to this link and download the repository or you can also clone the repository using 
+### 4. Generating images  
+For generating images go to trdg folder in TextRecognitionDataGenerator and then run 'run.py' file
 ```
-git clone https://github.com/Belval/TextRecognitionDataGenerator.git
+cd TextRecognitionDataGenerator/trdg
+python run.py -c 100
+```  
+This will generate 100 images in out folder in this directory.
+To check options do
 ```
-or you can simply do
+python run.py -h
 ```
-pip install trdg
-```
-
-After this simply run the run.py file in the trdg folder in anaconda prompt or an ide
-```
-python location/of/run.py -c 1000
-```
-This will generate 1000 images
-You can see help for various options present
-```
-python location/of/run.py -h
-```
-
-You can add more fonts in the fonts folder, more background images, texts, dictionaries etc according to the requirements
-
+You can add more fonts in the fonts folder, more background images, texts, dictionaries etc according to the requirements  
 Go to the official documentation https://textrecognitiondatagenerator.readthedocs.io/en/latest/index.html for more details
 
-
-### 4. Preparing the dataset in tfrecords format
-First you need to prepare the annotations.txt file which is just a simple text file containing the locations of all the images in the set and their corresponding labels
+### 5. Preparing the dataset in tfrecords format
+First you need to prepare the annotations.txt file which is just a simple text file containing the locations of all the images in the dataset and their corresponding labels
 for eg
 ```
-c:/Users/rkcha/TextRecognitionDataGenerator/trdg/out/11.jpg 7hj LcQ
+c:/Users/rkcha/TextRecognitionDataGenerator/trdg/out/11.jpg 7hjLcQ
 c:/Users/rkcha/TextRecognitionDataGenerator/trdg/out/12.jpg Yx5vNVfg
 c:/Users/rkcha/TextRecognitionDataGenerator/trdg/out/13.jpg DtbngV3Rs
 ```
@@ -85,25 +73,40 @@ To check more options use
 aocr dataset -h
 ```
 
+### 6. For training the model
+#### First copy the dataset in the tfrecords format in the dataset directory of the repository
 
-### 5. For training/testing the model install attention ocr or clone the repository
-https://github.com/emedvedev/attention-ocr
+Use the following command to train a fresh model and use the option --modcnn if you want to train using the modified cnn architecture  
 ```
-pip install aocr
-```
-or
-```
-git clone https://github.com/emedvedev/attention-ocr.git
-```
-
-
-### 6. To Train the model
-Use the following command to train the model
-```
-aocr train location/of/training/data/train.tfrecords
-```
+aocr train ./dataset/nameoffile.tfrecords
+acor train -modcnn ./dataset/nameoffile.tfrecords
+```  
+  
 For checking the options available use
 ```
 aocr train -h
 ```
 Here you can change number of epochs, batch size, image size etc.
+
+### 7. Testing the model
+Copy the data in the dataset folder of the repository  
+To test modified model use 
+```
+aocr test --model-dir ./checkpoint_mod_model --modcnn ./dataset/nameoffile.tfrecords
+```  
+To test original model use
+```
+aocr test --model-dir ./checkpoint_orig_model ./dataset/nameoffile.tfrecords
+```  
+To test any other model (use --modcnn if trained using modified cnn)
+```
+aocr test path/of/checkpoint ./dataset/filename.tfrecords
+aocr test --modcnn path/of/checkpoint ./dataset/filename.tfrecords
+ 
+```
+### 8. To use the web app
+```
+python app.py
+```
+and go to link http://127.0.0.1:5000/  
+then give the url of the image

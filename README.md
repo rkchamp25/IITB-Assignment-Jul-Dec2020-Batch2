@@ -3,7 +3,7 @@
 ## Handwritten Form Reader Web App  
 
 ### 0. my_run.sh
-To predict for a folder containing images simply execute my_run.sh. This will return the only the predictions in the output file.
+To predict for a folder containing images simply execute my_run.sh. This will return only the predictions in the output file.
 ```
 my_run.sh path/of/directory output/file/path/filename.txt
 ```

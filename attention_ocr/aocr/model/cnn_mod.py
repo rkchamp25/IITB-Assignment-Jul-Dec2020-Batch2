@@ -142,6 +142,10 @@ class CNN_mod(object):
 
         net = ConvRelu(x, 64, (3, 3), 'conv_conv9')
         net = ConvRelu(net, 64, (3, 3), 'conv_conv10')
+        x = tf.keras.layers.add([x, net])
+
+        net = ConvRelu(x, 64, (3, 3), 'conv_conv11')
+        net = ConvRelu(net, 64, (3, 3), 'conv_conv12')
         net = tf.keras.layers.add([x, net])
 
         net = ConvRelu(net, 128, (3, 3), 'conv_conv2')

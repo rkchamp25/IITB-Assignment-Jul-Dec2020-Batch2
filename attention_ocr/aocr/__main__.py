@@ -291,7 +291,7 @@ def main(args=None):
                        text, probability = model.predict(img_file_data)
                        logging.info('Result: OK. %s %s','{:.2f}'.format(probability), text)
                        print(filename, text, probability)
-                       output_file_txt.write('%s %s\n' % (filename, text))
+                       output_file_txt.write('%s %s\n' % (filename,text))
                except IOError:
                    logging.error('Result error while opening file %s .', dirpath+filename)
 

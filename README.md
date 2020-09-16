@@ -84,7 +84,7 @@ aocr dataset -h
 Use the following command to train a fresh model and use the option --modcnn if you want to train using the modified cnn architecture  
 ```
 aocr train ./dataset/nameoffile.tfrecords
-acor train -modcnn ./dataset/nameoffile.tfrecords
+aocr train --modcnn ./dataset/nameoffile.tfrecords
 ```  
   
 For checking the options available use
